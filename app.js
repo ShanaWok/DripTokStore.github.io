@@ -57,7 +57,7 @@ class App {
             if (user) {
                 this.currentUser = user;
                 const profile = await getUserProfile(user.uid);
-                this.isAdmin = (profile && profile.role === "admin") || user.email === "lagloriosacervecera.91@gmail.com";
+                this.isAdmin = (profile && profile.role === "admin") || user.email === "driptokstore.ofc@gmail.com";
                 
                 // Cargar favoritos del usuario de Firebase
                 this.favorites = await getUserFavorites(user.uid);
@@ -456,7 +456,7 @@ class App {
     renderHome() {
         // Categorías Destacadas (Círculos Interactivos)
        
-        const homeCats = ["camisetas", "poleras", "shord", "conjuntos", "tazas", "banderas", "cazacas", "buzos", "CajaRegalo" ];
+        const homeCats = ["camisas", "poleras", "shord", "conjuntos", "tazas", "banderas", "cazacas", "jeans", "CajaRegalo" ];
         const catsGrid = document.getElementById("home-categories");
         catsGrid.innerHTML = "";
 
@@ -594,14 +594,14 @@ class App {
 
     getCategoryEmoji(cat) {
         const map = {
-            "camisetas": "👕", 
+            "camisas": "👕", 
             "poleras": "🥼", 
             "shord": "🩳", 
             "conjuntos": "👕🩳", 
             "tazas": "🍵", 
             "banderas": "🚩", 
             "cazacas": "🧥",
-            "buzo": "👖",
+            "jeans": "👖",
             "CajaRegalo": "📦⭐",
         };
         return map[cat] || "🏷️";
@@ -729,7 +729,7 @@ class App {
             this.updateCartUI();
 
             // Abrir API de WhatsApp redireccionando al número maestro
-            window.open(`https://api.whatsapp.com/send?phone=51992316295&text=${encoded}`, "_blank");
+            window.open(`https://api.whatsapp.com/send?phone=51925411894&text=${encoded}`, "_blank");
             this.showToast("Pedido registrado. Redireccionando a WhatsApp...");
 
         } catch (err) {
