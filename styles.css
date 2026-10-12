@@ -286,7 +286,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-carousel {
     height: 500px;
-    width: 500%;
+    width: 100%;
     position: relative;
     background-color: var(--dark-charcoal);
     overflow: hidden;
@@ -301,6 +301,17 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     align-items: center;
 }
+
+
+/* Solo en PC (pantallas de más de 768px) */
+@media (min-width: 769px) {
+    .hero-slide {
+        background-position: center 10%;
+    }
+}
+
+
+
 
 .hero-overlay {
     position: absolute;
