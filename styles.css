@@ -78,7 +78,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn-black {
     background-color: var(--dark-charcoal);
     color: var(--white);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(245, 207, 68, 0.67);
 }
 
 .btn-black:hover {
@@ -90,7 +90,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn-primary {
     background-color: var(--primary);
     color: var(--white);
-    box-shadow: 0 4px 15px rgba(211, 47, 47, 0.3);
+    box-shadow: 0 4px 15px rgb(181, 170, 14);
 }
 
 .btn-primary:hover {
