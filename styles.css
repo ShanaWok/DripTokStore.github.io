@@ -3,25 +3,29 @@
    ========================================================================== */
 
 :root {
-    --primary: #15233B;
-    --primary-light: #252c8f;
-    --primary-dark: #339fbd;
-    --accent: #FFC107;
-    --background: #FAFAFB;
-    --bg-gray: #FFFFFF;
-    --border-color: #EEEEEE;
-    --text-color: #2C2C2C;
-    --text-muted: #8E8E93;
-    --white: #ffffff;
-    --dark-charcoal: #1A1A1A;
-    
-    --shadow-soft: 0 8px 24px rgba(211, 47, 47, 0.06);
-    --shadow-medium: 0 16px 40px rgba(0, 0, 0, 0.08);
-    --shadow-hover: 0 20px 40px rgba(211, 47, 47, 0.15);
-    
-    --transition-premium: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-    --border-radius: 16px;
+    /* ===== COLORES ===== */
+    --primary: #15233B;        /* Azul oscuro: botones principales, enlaces activos, títulos de producto, badge del carrito, bordes de stat-cards */
+    --primary-light: #252c8f;  /* Azul vivo: la palabra "Drip" del banner, hover del botón promo, títulos del admin, hover de enlaces del footer */
+    --primary-dark: #339fbd;   /* Celeste: solo el hover de .btn-primary ("Ver Catálogo") y el hover de .link-btn */
+    --accent: #FFC107;         /* Amarillo: textos pequeños "NUEVA COLECCION 2026" y "Edicion Limitada" */
+    --background: #FFDB58;     /* Gris muy claro: fondo general de la página, botones redondos del header, campos de formulario */
+    --bg-gray: #FFFFFF;        /* Blanco: declarada pero NO se usa en ninguna regla de tu CSS */
+    --border-color: #EEEEEE;   /* Gris claro: bordes de tarjetas, líneas separadoras, bordes de inputs */
+    --text-color: #2C2C2C;     /* Gris oscuro: color del texto normal en toda la página */
+    --text-muted: #8E8E93;     /* Gris medio: enlaces del menú sin seleccionar, descripciones, etiquetas de formularios */
+    --white: #ffffff;          /* Blanco: fondo de tarjetas, texto sobre fondos oscuros, textos del banner */
+    --dark-charcoal: #1A1A1A;  /* Negro suave: títulos (h1-h6), botón negro, footer, sidebar admin, toasts */
+
+    /* ===== SOMBRAS ===== */
+    --shadow-soft: 0 8px 24px rgba(211, 47, 47, 0.06);    /* Sombra suave rojiza: declarada pero NO se usa */
+    --shadow-medium: 0 16px 40px rgba(0, 0, 0, 0.08);     /* Sombra media gris: tarjetas al pasar el mouse, banner promo, modal de pago, formularios de login, panel de resumen del carrito */
+    --shadow-hover: 0 20px 40px rgba(211, 47, 47, 0.15);  /* Sombra rojiza al hacer hover: botones .btn-black y .btn-primary, categorías */
+
+    /* ===== ANIMACIÓN Y FORMA ===== */
+    --transition-premium: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);  /* Velocidad y suavidad de TODOS los efectos hover (botones, enlaces, tarjetas, menú) */
+    --border-radius: 16px;     /* Redondeo de esquinas: tarjetas de categoría y producto, sidebar de filtros, barra superior del catálogo */
 }
+
 
 * {
     box-sizing: border-box;
