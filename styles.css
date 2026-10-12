@@ -302,7 +302,13 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
 }
 
-
+@media (min-width: 769px) {
+    .hero-slide {
+        background-size: 70%;          /* vertical */
+        background-position: 50% 50%;  /* horizontal  vertical */
+        background-repeat: no-repeat;
+    }
+}
 
 
 
