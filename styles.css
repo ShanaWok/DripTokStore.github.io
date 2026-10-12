@@ -303,13 +303,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/* Solo en PC (pantallas de más de 768px) */
 @media (min-width: 769px) {
     .hero-slide {
         background-position: center 10%;
     }
 }
-
 
 
 
