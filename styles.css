@@ -355,7 +355,7 @@ h1, h2, h3, h4, h5, h6 {
 .hero-subtitle {
     font-size: 20px;
     font-weight: 900;
-    color: #0606c7;
+    color: #47478b;
     margin-bottom: 30px;
     line-height: 1.6;
 }
@@ -1676,7 +1676,7 @@ h1, h2, h3, h4, h5, h6 {
         position: relative;
         top: -70px;          /* ARRIBA/ABAJO */
         left: 0px;           /* IZQUIERDA/DERECHA */
-        font-size: 50px;     /* LETRAS: tamaño */
+        font-size: 70px;     /* LETRAS: tamaño */
         line-height: 1.1;    /* LETRAS: espacio entre "Estilo" y "Drip" */
     }
 
