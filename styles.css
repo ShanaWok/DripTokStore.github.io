@@ -1685,7 +1685,8 @@ h1, h2, h3, h4, h5, h6 {
         position: relative;
         top: -90px;          /* ARRIBA/ABAJO */
         left: 6px;           /* IZQUIERDA/DERECHA */
-        font-size: 15px;     /* LETRAS: tamaño */
+        font-size: 29px;/* LETRAS: tamaño */
+         font-weight: 900;    /* GROSOR: más bajo = más delgado, más alto = más grueso */
         max-width: 500px;    /* ANCHO DEL PÁRRAFO: más angosto = baja de línea antes */
     }
 
