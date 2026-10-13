@@ -336,7 +336,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-tag {
-    font-size: 13px;
+    font-size: 20px;
     font-weight: 800;
     letter-spacing: 3px;
     color: var(--accent);
@@ -360,8 +360,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-subtitle {
     font-size: 20px;
-    font-weight: 700;
-    color: #3a00c2;
+    font-weight: 400;
+    color: #0606c7;
     margin-bottom: 30px;
     line-height: 1.6;
 }
