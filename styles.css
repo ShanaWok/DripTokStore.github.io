@@ -1698,7 +1698,7 @@ h1, h2, h3, h4, h5, h6 {
     /* ---------- LOS DOS BOTONES (posición) ---------- */
     .hero-actions {
         position: relative;
-        top: 20px;           /* SUBIR/BAJAR BOTONES: positivo = baja, negativo = sube */
+        top: 40px;           /* SUBIR/BAJAR BOTONES: positivo = baja, negativo = sube */
         left: 0px;           /* BOTONES IZQUIERDA/DERECHA */
         gap: 15px;           /* ESPACIO ENTRE LOS DOS BOTONES */
     }
