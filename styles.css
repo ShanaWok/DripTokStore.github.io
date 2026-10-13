@@ -1732,16 +1732,17 @@ h1, h2, h3, h4, h5, h6 {
     /* ---------- "Descubre nuestros nuevos conjuntos clasicos" ---------- */
     .hero-subtitle {
         position: relative;
-        top: -10px;          /* ARRIBA/ABAJO */
+        top: -30px;          /* ARRIBA/ABAJO */
         left: 0px;           /* IZQUIERDA/DERECHA */
         font-size: 13px;     /* LETRAS: tamaño */
+         font-weight: 900;    /* GROSOR: más bajo = más delgado, más alto = más grueso */
         max-width: 220px;    /* ANCHO DEL PÁRRAFO */
     }
 
     /* ---------- LOS DOS BOTONES (posición) ---------- */
     .hero-actions {
         position: relative;
-        top: 10px;           /* SUBIR/BAJAR BOTONES */
+        top: 50px;           /* SUBIR/BAJAR BOTONES */
         left: 0px;           /* BOTONES IZQUIERDA/DERECHA */
         gap: 10px;           /* ESPACIO ENTRE LOS DOS BOTONES */
     }
