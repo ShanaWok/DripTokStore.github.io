@@ -1663,51 +1663,98 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-
 /* ============================================================
-   SOLO PC
+   SOLO PC (pantallas de 769px o más)
    ============================================================ */
 @media (min-width: 769px) {
 
-    /* ---------- TEXTO "NUEVA COLECCION 2026" (letras amarillas pequeñas) ---------- */
+    /* ---------- "NUEVA COLECCION 2026" ---------- */
     .hero-tag {
         position: relative;
-        top: -80px;          /* MOVER ARRIBA/ABAJO: negativo = sube, positivo = baja */
-        left: 0px;           /* MOVER IZQUIERDA/DERECHA: positivo = derecha, negativo = izquierda */
-        font-size: 20px;     /* LETRAS: tamaño (más grande = letras más grandes) */
-        letter-spacing: 3px; /* LETRAS: espacio entre letras (más = texto más ancho) */
+        top: -80px;          /* ARRIBA/ABAJO: negativo = sube, positivo = baja */
+        left: 0px;           /* IZQUIERDA/DERECHA: positivo = derecha, negativo = izquierda */
+        font-size: 20px;     /* LETRAS: tamaño */
+        letter-spacing: 3px; /* LETRAS: espacio entre letras */
     }
 
-    /* ---------- TÍTULO "Estilo Drip" (letras grandes) ---------- */
+    /* ---------- "Estilo Drip" ---------- */
     .hero-title {
         position: relative;
-        top: -70px;          /* MOVER ARRIBA/ABAJO: negativo = sube, positivo = baja */
-        left: 0px;           /* MOVER IZQUIERDA/DERECHA */
+        top: -70px;          /* ARRIBA/ABAJO */
+        left: 0px;           /* IZQUIERDA/DERECHA */
         font-size: 50px;     /* LETRAS: tamaño */
-        line-height: 1.1;    /* LETRAS: espacio vertical entre "Estilo" y "Drip" */
+        line-height: 1.1;    /* LETRAS: espacio entre "Estilo" y "Drip" */
     }
 
-    /* ---------- SUBTÍTULO "Descubre nuestros nuevos conjuntos clasicos" ---------- */
+    /* ---------- "Descubre nuestros nuevos conjuntos clasicos" ---------- */
     .hero-subtitle {
         position: relative;
-        top: -80px;          /* MOVER ARRIBA/ABAJO: negativo = sube, positivo = baja */
-        left: 0px;           /* MOVER IZQUIERDA/DERECHA */
+        top: -80px;          /* ARRIBA/ABAJO */
+        left: 0px;           /* IZQUIERDA/DERECHA */
         font-size: 20px;     /* LETRAS: tamaño */
-        max-width: 300px;    /* ANCHO DEL PÁRRAFO: más angosto = el texto baja de línea antes */
+        max-width: 300px;    /* ANCHO DEL PÁRRAFO: más angosto = baja de línea antes */
     }
 
-    /* ---------- GRUPO DE LOS DOS BOTONES (Ver Catálogo + Novedades) ---------- */
+    /* ---------- LOS DOS BOTONES (posición) ---------- */
     .hero-actions {
         position: relative;
-        top: 20px;           /* BAJAR/SUBIR LOS BOTONES: positivo = baja, negativo = sube */
-        left: 0px;           /* MOVER BOTONES IZQUIERDA/DERECHA */
+        top: 20px;           /* SUBIR/BAJAR BOTONES: positivo = baja, negativo = sube */
+        left: 0px;           /* BOTONES IZQUIERDA/DERECHA */
         gap: 15px;           /* ESPACIO ENTRE LOS DOS BOTONES */
     }
 
-    /* ---------- TAMAÑO DE LOS BOTONES (los dos a la vez) ---------- */
+    /* ---------- LOS DOS BOTONES (tamaño) ---------- */
     .hero-actions .btn {
-        padding: 14px 32px;  /* BOTÓN: primer número = ALTO (14px), segundo = ANCHO (32px) */
+        padding: 14px 32px;  /* BOTÓN: primer número = ALTO, segundo = ANCHO */
         font-size: 15px;     /* LETRAS DEL BOTÓN: tamaño */
+    }
+}
+
+
+/* ============================================================
+   SOLO CELULAR (pantallas de 768px o menos)
+   ============================================================ */
+@media (max-width: 768px) {
+
+    /* ---------- "NUEVA COLECCION 2026" ---------- */
+    .hero-tag {
+        position: relative;
+        top: -35px;          /* ARRIBA/ABAJO: negativo = sube, positivo = baja */
+        left: 0px;           /* IZQUIERDA/DERECHA */
+        font-size: 12px;     /* LETRAS: tamaño */
+        letter-spacing: 2px; /* LETRAS: espacio entre letras */
+    }
+
+    /* ---------- "Estilo Drip" ---------- */
+    .hero-title {
+        position: relative;
+        top: -20px;          /* ARRIBA/ABAJO */
+        left: 0px;           /* IZQUIERDA/DERECHA */
+        font-size: 28px;     /* LETRAS: tamaño */
+        line-height: 1.1;    /* LETRAS: espacio entre "Estilo" y "Drip" */
+    }
+
+    /* ---------- "Descubre nuestros nuevos conjuntos clasicos" ---------- */
+    .hero-subtitle {
+        position: relative;
+        top: -10px;          /* ARRIBA/ABAJO */
+        left: 0px;           /* IZQUIERDA/DERECHA */
+        font-size: 13px;     /* LETRAS: tamaño */
+        max-width: 220px;    /* ANCHO DEL PÁRRAFO */
+    }
+
+    /* ---------- LOS DOS BOTONES (posición) ---------- */
+    .hero-actions {
+        position: relative;
+        top: 10px;           /* SUBIR/BAJAR BOTONES */
+        left: 0px;           /* BOTONES IZQUIERDA/DERECHA */
+        gap: 10px;           /* ESPACIO ENTRE LOS DOS BOTONES */
+    }
+
+    /* ---------- LOS DOS BOTONES (tamaño) ---------- */
+    .hero-actions .btn {
+        padding: 10px 20px;  /* BOTÓN: primer número = ALTO, segundo = ANCHO */
+        font-size: 13px;     /* LETRAS DEL BOTÓN: tamaño */
     }
 }
 
