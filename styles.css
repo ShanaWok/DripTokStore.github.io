@@ -1752,7 +1752,21 @@ h1, h2, h3, h4, h5, h6 {
         padding: 14px 34px;
         font-size: 11px;
     }
+
+@media (max-width: 768px) {
+
+    /* ---------- SOLO EL BOTÓN "NOVEDADES" ---------- */
+    .hero-actions .btn-outline {
+        position: relative;
+        top: -75px;      /* SUBIR/BAJAR: negativo = sube, positivo = baja */
+        left: -140px;    /* IZQUIERDA/DERECHA: negativo = izquierda, positivo = derecha */
+    }
 }
+
+
+
+
+
 
 /* ============================================================
    BANNER: la imagen llena todo el ancho (sin bordes)
