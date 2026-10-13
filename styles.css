@@ -8,7 +8,7 @@
     --primary-light: #252c8f;  /* Azul vivo: la palabra "Drip" del banner, hover del botón promo, títulos del admin, hover de enlaces del footer */
     --primary-dark: #339fbd;   /* Celeste: solo el hover de .btn-primary ("Ver Catálogo") y el hover de .link-btn */
     --accent: #FFC107;         /* Amarillo: textos pequeños "NUEVA COLECCION 2026" y "Edicion Limitada" */
-    --background: #F0D9A8;     /* Gris muy claro: fondo general de la página, botones redondos del header, campos de formulario */
+    --background: #3C588C;     /* Gris muy claro: fondo general de la página, botones redondos del header, campos de formulario */
     --bg-gray: #FFFFFF;        /* Blanco: declarada pero NO se usa en ninguna regla de tu CSS */
     --border-color: #EEEEEE;   /* Gris claro: bordes de tarjetas, líneas separadoras, bordes de inputs */
     --text-color: #2C2C2C;     /* Gris oscuro: color del texto normal en toda la página */
@@ -156,7 +156,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 24px;
     font-weight: 800;
     letter-spacing: 1px;
-    color: var(--primary);
+    color: #c9a247;
 }
 
 .logo span {
@@ -205,8 +205,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .icon-btn {
-    background: var(--background);
-    border: 1px solid var(--border-color);
+    background: #d1b74a;
+    border: 1px solid #020202;
     cursor: pointer;
     color: var(--text-color);
     width: 42px;
@@ -1753,24 +1753,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ============================================================
-   BANNER: la imagen se ve completa en PC y en celular
+   BANNER: la imagen llena todo el ancho (sin bordes)
    ============================================================ */
 .hero-carousel {
-    height: 600px;                 /* alto en PC */
-    background-color: #EFE3D3;     /* IGUAL al color de fondo de la imagen */
+    height: auto;
+    aspect-ratio: 17 / 7;          /* proporción de tu imagen, ajústala si hace falta */
 }
 
 .hero-slide {
     height: 100%;
-    background-size: contain;      /* muestra la imagen entera, sin recortar */
+    background-size: 100% 100%;    /* la imagen llena todo el banner */
     background-position: center;
     background-repeat: no-repeat;
 }
 
 @media (max-width: 768px) {
     .hero-carousel {
-        height: 300px;             /* alto en celular */
+        aspect-ratio: auto;
+        height: 300px;
     }
 }
-
 
