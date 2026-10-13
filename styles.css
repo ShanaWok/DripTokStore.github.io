@@ -314,18 +314,18 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-
-
-
-
-.hero-overlay {
+/* ==========================================================================
+   color sobre el baner principal
+   ========================================================================== */
+.hero-overlay {                                                                 
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, rgba(160, 212, 247, 0.564) 0%, rgba(29, 221, 224, 0.413) 100%);
-}
+    background: linear-gradient(90deg, rgb(0 17 28 / 56%) 0%, rgb(27 69 70 / 41%) 100%); 
+
+
 
 .hero-content {
     position: relative;
