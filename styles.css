@@ -1657,7 +1657,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-/* ============================================================
+/* =====/* ============================================================
    SOLO PC (pantallas de 769px o más)
    ============================================================ */
 @media (min-width: 769px) {
@@ -1665,7 +1665,7 @@ h1, h2, h3, h4, h5, h6 {
     /* ---------- "NUEVA COLECCION 2026" ---------- */
     .hero-tag {
         position: relative;
-        top: -100px;          /* ARRIBA/ABAJO: negativo = sube, positivo = baja */
+        top: -100px;         /* ARRIBA/ABAJO: negativo = sube, positivo = baja */
         left: 0px;           /* IZQUIERDA/DERECHA: positivo = derecha, negativo = izquierda */
         font-size: 20px;     /* LETRAS: tamaño */
         letter-spacing: 3px; /* LETRAS: espacio entre letras */
@@ -1676,8 +1676,8 @@ h1, h2, h3, h4, h5, h6 {
         position: relative;
         top: -70px;          /* ARRIBA/ABAJO */
         left: 0px;           /* IZQUIERDA/DERECHA */
-        font-size: 70px;     /* LETRAS: tamaño */
-        line-height: 1.1;    /* LETRAS: espacio entre "Estilo" y "Drip" */
+        font-size: 50px;     /* LETRAS: tamaño (antes 70px) */
+        line-height: 1.1;    /* LETRAS: espacio entre líneas */
     }
 
     /* ---------- "Descubre nuestros nuevos conjuntos clasicos" ---------- */
@@ -1685,15 +1685,15 @@ h1, h2, h3, h4, h5, h6 {
         position: relative;
         top: -90px;          /* ARRIBA/ABAJO */
         left: 6px;           /* IZQUIERDA/DERECHA */
-        font-size: 70px;/* LETRAS: tamaño */
-         font-weight: 900;    /* GROSOR: más bajo = más delgado, más alto = más grueso */
+        font-size: 24px;     /* LETRAS: tamaño (antes 70px) */
+        font-weight: 900;    /* GROSOR: más bajo = más delgado, más alto = más grueso */
         max-width: 500px;    /* ANCHO DEL PÁRRAFO: más angosto = baja de línea antes */
     }
 
     /* ---------- LOS DOS BOTONES (posición) ---------- */
     .hero-actions {
         position: relative;
-        top: -70px;           /* SUBIR/BAJAR BOTONES: positivo = baja, negativo = sube */
+        top: -70px;          /* SUBIR/BAJAR BOTONES: positivo = baja, negativo = sube */
         left: 0px;           /* BOTONES IZQUIERDA/DERECHA */
         gap: 15px;           /* ESPACIO ENTRE LOS DOS BOTONES */
     }
@@ -1762,20 +1762,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-
-
-
-
 /* ============================================================
    BANNER: la imagen llena todo el ancho (sin bordes)
    ============================================================ */
 .hero-carousel {
     height: auto;
-    aspect-ratio: 17 / 7;          /* proporción de tu imagen, ajústala si hace falta */
+    background-color: #EFE3D3;
 }
 
 .hero-slide {
-    height: 100%;
+    height: auto;
+    aspect-ratio: 17 / 7;          /* si el oso se ve ancho o alto, prueba 12 / 5 o 5 / 2 */
     background-size: 100% 100%;    /* la imagen llena todo el banner */
     background-position: center;
     background-repeat: no-repeat;
@@ -1783,8 +1780,12 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
     .hero-carousel {
-        aspect-ratio: auto;
         height: 300px;
     }
+    .hero-slide {
+        aspect-ratio: auto;
+        height: 100%;
+    }
+}
 }
 
