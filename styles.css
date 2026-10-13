@@ -1689,8 +1689,8 @@ h1, h2, h3, h4, h5, h6 {
     /* ---------- "Descubre nuestros nuevos conjuntos clasicos" ---------- */
     .hero-subtitle {
         position: relative;
-        top: -80px;          /* ARRIBA/ABAJO */
-        left: 0px;           /* IZQUIERDA/DERECHA */
+        top: -50px;          /* ARRIBA/ABAJO */
+        left: 5px;           /* IZQUIERDA/DERECHA */
         font-size: 20px;     /* LETRAS: tamaño */
         max-width: 300px;    /* ANCHO DEL PÁRRAFO: más angosto = baja de línea antes */
     }
@@ -1719,7 +1719,7 @@ h1, h2, h3, h4, h5, h6 {
     /* ---------- "NUEVA COLECCION 2026" ---------- */
     .hero-tag {
         position: relative;
-        top: -90px;          /* ARRIBA/ABAJO: negativo = sube, positivo = baja */
+        top: -50px;          /* ARRIBA/ABAJO: negativo = sube, positivo = baja */
         left: 0px;           /* IZQUIERDA/DERECHA */
         font-size: 12px;     /* LETRAS: tamaño */
         letter-spacing: 2px; /* LETRAS: espacio entre letras */
