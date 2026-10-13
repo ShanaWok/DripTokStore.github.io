@@ -1673,7 +1673,7 @@ h1, h2, h3, h4, h5, h6 {
         position: relative;
         top: -80px;          /* ARRIBA/ABAJO: negativo = sube, positivo = baja */
         left: 0px;           /* IZQUIERDA/DERECHA: positivo = derecha, negativo = izquierda */
-        font-size: 50px;     /* LETRAS: tamaño */
+        font-size: 500px;     /* LETRAS: tamaño */
         letter-spacing: 3px; /* LETRAS: espacio entre letras */
     }
 
