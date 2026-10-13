@@ -359,9 +359,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-subtitle {
-    font-size: 16px;
-    font-weight: 400;
-    color: #F5F5F7;
+    font-size: 20px;
+    font-weight: 700;
+    color: #3a00c2;
     margin-bottom: 30px;
     line-height: 1.6;
 }
