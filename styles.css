@@ -1655,21 +1655,31 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/* Mover botones del inicio y el texto xd */
-
+/* Mover botones del inicio y el texto */
 
 /* Solo PC */
 @media (min-width: 769px) {
-    .hero-tag, .hero-title, .hero-subtitle { top: -70px; }  /* negativo = sube, positivo = baja */
-    .hero-actions { top: 20px; }   /* positivo = baja, negativo = sube */
+    .hero-tag, .hero-title, .hero-subtitle {
+        position: relative;
+        top: -70px;   /* negativo = sube, positivo = baja */
+    }
+    .hero-actions {
+        position: relative;
+        top: 20px;    /* positivo = baja, negativo = sube */
+    }
 }
 
 /* Solo celular */
 @media (max-width: 768px) {
-    .hero-tag, .hero-title, .hero-subtitle { top: -20px; }   /* negativo = sube, positivo = baja */
-    .hero-actions { top: 20px; }   /* positivo = baja, negativo = sube */
+    .hero-tag, .hero-title, .hero-subtitle {
+        position: relative;
+        top: -20px;
+    }
+    .hero-actions {
+        position: relative;
+        top: 20px;
+    }
 }
-
 
 
 
