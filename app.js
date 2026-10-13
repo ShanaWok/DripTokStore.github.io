@@ -456,7 +456,7 @@ class App {
     renderHome() {
         // Categorías Destacadas (Círculos Interactivos)
        
-        const homeCats = ["camisas", "poleras", "shord", "conjuntos", "tazas", "banderas", "cazacas", "jeans", "CajaRegalo" ];
+        const homeCats = ["camiseros OG", "polos OG", "camisas OG", "sueteres", "poleras", "polos camiseros", "pantalones", "camisas", "gorras" ];
         const catsGrid = document.getElementById("home-categories");
         catsGrid.innerHTML = "";
 
@@ -594,15 +594,15 @@ class App {
 
     getCategoryEmoji(cat) {
         const map = {
-            "camisas": "👕", 
-            "poleras": "🥼", 
-            "shord": "🩳", 
-            "conjuntos": "👕🩳", 
-            "tazas": "🍵", 
-            "banderas": "🚩", 
-            "cazacas": "🧥",
-            "jeans": "👖",
-            "CajaRegalo": "📦⭐",
+            "camiseros OG": "👚", 
+            "polos OG": "👕", 
+            "camisas OG": "👚", 
+            "sueteres": "🧥", 
+            "poleras": "🧥🧣", 
+            "polos camiseros": "👕", 
+            "pantalones": "👖",
+            "camisas": "👚",
+            "gorras": "🧢",
         };
         return map[cat] || "🏷️";
     }
@@ -716,7 +716,7 @@ class App {
             const orderId = await createOrderInDb(this.currentUser ? this.currentUser.uid : null, this.cart, total);
 
             // Generar contenido exclusivo del mensaje de WhatsApp (sin precios en la lista de ítems)
-            let msg = `Hola GloriosaCervecera.\nQuiero realizar la compra de los siguientes productos:\n`;
+            let msg = `Hola DripTokStore.\nQuiero realizar la compra de los siguientes productos:\n`;
             this.cart.forEach(item => {
                 msg += `• ${item.quantity}x ${item.name}\n`;
             });
