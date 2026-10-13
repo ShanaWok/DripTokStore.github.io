@@ -1665,7 +1665,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     .hero-actions {
         position: relative;
-        top: 20px;    /* positivo = baja, negativo = sube */
+        top: 10px;    /* positivo = baja, negativo = sube */
     }
 }
 
@@ -1677,7 +1677,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     .hero-actions {
         position: relative;
-        top: 20px;
+        top: 10px;
     }
 }
 
