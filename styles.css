@@ -1719,7 +1719,7 @@ h1, h2, h3, h4, h5, h6 {
     /* ---------- "NUEVA COLECCION 2026" ---------- */
     .hero-tag {
         position: relative;
-        top: -50px;          /* ARRIBA/ABAJO: negativo = sube, positivo = baja */
+        top: -90px;          /* ARRIBA/ABAJO: negativo = sube, positivo = baja */
         left: 0px;           /* IZQUIERDA/DERECHA */
         font-size: 12px;     /* LETRAS: tamaño */
         letter-spacing: 2px; /* LETRAS: espacio entre letras */
