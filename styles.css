@@ -1749,8 +1749,8 @@ h1, h2, h3, h4, h5, h6 {
 
     /* ---------- LOS DOS BOTONES (tamaño) ---------- */
     .hero-actions .btn {
-        padding: 14px 34px;
-        font-size: 11px;
+        padding: 18px 34px;
+        font-size: 9px;
     }
 
     /* ---------- SOLO EL BOTÓN "NOVEDADES" ---------- */
