@@ -1689,9 +1689,9 @@ h1, h2, h3, h4, h5, h6 {
     /* ---------- "Descubre nuestros nuevos conjuntos clasicos" ---------- */
     .hero-subtitle {
         position: relative;
-        top: -50px;          /* ARRIBA/ABAJO */
+        top: -80px;          /* ARRIBA/ABAJO */
         left: 5px;           /* IZQUIERDA/DERECHA */
-        font-size: 20px;     /* LETRAS: tamaño */
+        font-size: 40px;     /* LETRAS: tamaño */
         max-width: 300px;    /* ANCHO DEL PÁRRAFO: más angosto = baja de línea antes */
     }
 
