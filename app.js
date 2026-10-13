@@ -454,27 +454,40 @@ class App {
     }
 
     renderHome() {
-        // Categorías Destacadas (Círculos Interactivos)
-       
-        const homeCats = ["camiseros OG", "polos OG", "camisas OG", "sueteres", "poleras", "polos camiseros", "pantalones", "camisas", "gorras" ];
-        const catsGrid = document.getElementById("home-categories");
-        catsGrid.innerHTML = "";
+      // ⬇️ AQUÍ PEGAS EL LINK DE LA IMAGEN DE CADA CATEGORÍA
+// El "name" debe ser IGUAL a la categoría de tus productos
+const homeCats = [
+    { name: "camiseros OG",    img: "https://LINK-DE-IMAGEN-1.jpg" },
+    { name: "polos OG",        img: "https://LINK-DE-IMAGEN-2.jpg" },
+    { name: "camisas OG",      img: "https://LINK-DE-IMAGEN-3.jpg" },
+    { name: "sueteres",        img: "https://LINK-DE-IMAGEN-4.jpg" },
+    { name: "poleras",         img: "https://LINK-DE-IMAGEN-5.jpg" },
+    { name: "polos camiseros", img: "https://LINK-DE-IMAGEN-6.jpg" },
+    { name: "pantalones",      img: "https://LINK-DE-IMAGEN-7.jpg" },
+    { name: "camisas",         img: "https://LINK-DE-IMAGEN-8.jpg" },
+    { name: "gorras",          img: "https://LINK-DE-IMAGEN-9.jpg" }
+];
+const catsGrid = document.getElementById("home-categories");
+catsGrid.innerHTML = "";
 
-        homeCats.forEach(cat => {
-            const div = document.createElement("div");
-            div.className = "category-card";
-            div.innerHTML = `
-                <div class="category-icon">${this.getCategoryEmoji(cat)}</div>
-                <div class="category-name">${cat}</div>
-            `;
-            div.addEventListener("click", () => {
-                this.filters.category = cat;
-                this.renderFiltersSidebar();
-                window.location.hash = "#catalog";
-                this.renderCatalog();
-            });
-            catsGrid.appendChild(div);
-        });
+homeCats.forEach(cat => {
+    const div = document.createElement("div");
+    div.className = "category-card";
+    div.innerHTML = `
+        <img class="category-img" src="${cat.img}" alt="${cat.name}" loading="lazy">
+        <div class="category-overlay">
+            <span class="category-name">${cat.name}</span>
+            <span class="category-cta">Ver ahora →</span>
+        </div>
+    `;
+    div.addEventListener("click", () => {
+        this.filters.category = cat.name;
+        this.renderFiltersSidebar();
+        window.location.hash = "#catalog";
+        this.renderCatalog();
+    });
+    catsGrid.appendChild(div);
+});
 
         // Productos Destacados (Últimos 4 agregados)
         const featuredContainer = document.getElementById("featured-products");
