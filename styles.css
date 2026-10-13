@@ -1655,10 +1655,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+/* Mover botones del inicio y el texto xd */
 
 
+/* Textos más arriba */
+.hero-tag,
+.hero-title,
+.hero-subtitle {
+    position: relative;
+    top: -40px;     /* negativo = sube, positivo = baja */
+}
 
-
+/* Botones más abajo */
+.hero-actions {
+    position: relative;
+    top: 40px;      /* positivo = baja, negativo = sube */
+}
 
 
 
