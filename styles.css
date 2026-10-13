@@ -1659,28 +1659,64 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Solo PC */
 @media (min-width: 769px) {
-    .hero-tag, .hero-title, .hero-subtitle {
+    .hero-tag {
         position: relative;
-        top: -70px;   /* negativo = sube, positivo = baja */
+        top: -70px;
+        font-size: 20px;        /* tamaño de las letras */
+        letter-spacing: 3px;    /* espacio entre letras (ancho del texto) */
+    }
+    .hero-title {
+        position: relative;
+        top: -70px;
+        font-size: 50px;
+        line-height: 1.1;       /* alto de línea (espacio entre "Estilo" y "Drip") */
+    }
+    .hero-subtitle {
+        position: relative;
+        top: -70px;
+        font-size: 20px;
+        max-width: 300px;       /* ancho del párrafo */
     }
     .hero-actions {
         position: relative;
-        top: 10px;    /* positivo = baja, negativo = sube */
+        top: 10px;
+        gap: 15px;              /* espacio entre los dos botones */
+    }
+    .hero-actions .btn {
+        padding: 14px 32px;     /* alto (14px) y ancho (32px) del botón */
+        font-size: 15px;        /* tamaño de la letra del botón */
     }
 }
 
 /* Solo celular */
 @media (max-width: 768px) {
-    .hero-tag, .hero-title, .hero-subtitle {
+    .hero-tag {
         position: relative;
         top: -20px;
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+    .hero-title {
+        position: relative;
+        top: -20px;
+        font-size: 28px;
+    }
+    .hero-subtitle {
+        position: relative;
+        top: -20px;
+        font-size: 13px;
+        max-width: 220px;
     }
     .hero-actions {
         position: relative;
         top: 10px;
+        gap: 10px;
+    }
+    .hero-actions .btn {
+        padding: 10px 20px;
+        font-size: 13px;
     }
 }
-
 
 
 
