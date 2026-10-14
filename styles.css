@@ -8,7 +8,7 @@
     --primary-light: #252c8f;  /* Azul vivo: la palabra "Drip" del banner, hover del botón promo, títulos del admin, hover de enlaces del footer */
     --primary-dark: #339fbd;   /* Celeste: solo el hover de .btn-primary ("Ver Catálogo") y el hover de .link-btn */
     --accent: #FFC107;         /* Amarillo: textos pequeños "NUEVA COLECCION 2026" y "Edicion Limitada" */
-    --background: #3C588C;     /* Gris muy claro: fondo general de la página, botones redondos del header, campos de formulario */
+    --background: #FFF5E2;     /* Gris muy claro: fondo general de la página, botones redondos del header, campos de formulario */
     --bg-gray: #FFFFFF;        /* Blanco: declarada pero NO se usa en ninguna regla de tu CSS */
     --border-color: #EEEEEE;   /* Gris claro: bordes de tarjetas, líneas separadoras, bordes de inputs */
     --text-color: #2C2C2C;     /* Gris oscuro: color del texto normal en toda la página */
