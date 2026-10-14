@@ -457,15 +457,15 @@ class App {
       // ⬇️ AQUÍ PEGAS EL LINK DE LA IMAGEN DE CADA CATEGORÍA
 // El "name" debe ser IGUAL a la categoría de tus productos
 const homeCats = [
-    { name: "camiseros OG",    img: "https://LINK-DE-IMAGEN-1.jpg" },
-    { name: "polos OG",        img: "https://LINK-DE-IMAGEN-2.jpg" },
-    { name: "camisas OG",      img: "https://LINK-DE-IMAGEN-3.jpg" },
-    { name: "sueteres",        img: "https://LINK-DE-IMAGEN-4.jpg" },
-    { name: "poleras",         img: "https://LINK-DE-IMAGEN-5.jpg" },
-    { name: "polos camiseros", img: "https://LINK-DE-IMAGEN-6.jpg" },
-    { name: "pantalones",      img: "https://LINK-DE-IMAGEN-7.jpg" },
-    { name: "camisas",         img: "https://LINK-DE-IMAGEN-8.jpg" },
-    { name: "gorras",          img: "https://LINK-DE-IMAGEN-9.jpg" }
+    { name: "camiseros OG",    img: "https://cdn.phototourl.com/member/2026-10-14-e0847156-bce4-4111-ba13-8a3dd113deb5.jpg" },
+    { name: "polos OG",        img: "https://cdn.phototourl.com/member/2026-10-14-f2906362-c22a-4383-8e2c-c58fd9961104.jpg" },
+    { name: "camisas OG",      img: "https://cdn.phototourl.com/member/2026-10-14-f2a4fdf1-dccc-405d-b6fd-2660905d1627.jpg" },
+    { name: "sueteres",        img: "https://cdn.phototourl.com/member/2026-10-14-b64af40d-b6c5-4f86-8add-48b20b557cd2.jpg" },
+    { name: "poleras",         img: "https://cdn.phototourl.com/member/2026-10-14-46187014-8fba-4d27-8d52-d229df2872ee.jpg" },
+    { name: "polos camiseros", img: "https://cdn.phototourl.com/member/2026-10-14-b454e5f2-14ef-4b88-802b-8117f0ff2f60.jpg" },
+    { name: "pantalones",      img: "https://cdn.phototourl.com/member/2026-10-14-5f55bc0f-0d4d-4273-b6e8-13ecd61f6d7d.jpg" },
+    { name: "camisas",         img: "https://cdn.phototourl.com/member/2026-10-14-6f82e65d-caa0-4d31-8f88-0f3a78160fd8.jpg" },
+    { name: "gorras",          img: "https://cdn.phototourl.com/member/2026-10-14-5528b047-1228-4ec6-b878-b70f75d77a99.jpg" }
 ];
 const catsGrid = document.getElementById("home-categories");
 catsGrid.innerHTML = "";
